@@ -26,6 +26,7 @@ public class LaunchEnv1 extends BaseClass {
 				 driver.manage().window().maximize();
 				 Utilities.waitImplicit();	
 				 flag=true;
+				 System.out.println("added code");
 				 Log.info(Browser +"invoked successfully");
 			//	 Reports.pass("Browser Invocaiton", Browser+ "invoked successfully");
 			 }else if(Browser.equalsIgnoreCase("Firefox")) {
@@ -67,7 +68,6 @@ public class LaunchEnv1 extends BaseClass {
 	public static void closeBrowser() {
 		try {
 			driver.close();
-			 Log.info("Browser closed successfully");
 			 Reports.info("Broser clowing ","Browser closed successfully");
 		}catch(Exception e) {
 			Log.info( "Broser closkng is  failed due to "+ e.fillInStackTrace());
